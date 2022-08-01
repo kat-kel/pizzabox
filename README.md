@@ -92,9 +92,10 @@ To demonstrate the command, imagine you have the following file structure on you
 |   |       |             |----5_Run HTRVX.txt/
 ...
 ```
-From, for example, the direcoty `./Dropbox`, and with the virtual environment `pizza-cli` activate, you would call the following comamnd:
+From the direcoty `./Dropbox` and with the virtual environment `pizza-cli` activated, for example, you would call the following comamnd:
 ```shell
 (pizza-cli) $ pizzabox ../../Downloads/logs_23/HTRVX/5_Run\ HTRVX.txt ./GitHub_Project/
 ```
+What we see in the above command is (1) the virtual environemt is activated (`(pizza-cli)`), (2) the CLI tool is being alled (`pizzabox`), (3) the first positional argument is a relative file path to the HTRVX log #5 (`../../Downloads/logs_23/HTRVX/5_Run\ HTRVX.txt`), and (4) the second positional argument is a relative path to the project's cloned and recently pulled directory (`./GitHub_Project/`).
 ## Results
 The CLI tool produces a folder called `htrvx_corrections/` inside whatever directory from which you ran the command. In the above example, the tool would produce the folder `./Dropbox/htrvx_corrections/` and inside would be an output CSV file with the name of the input log file, i.e. `./Dropbox/htrvx_corrections/output_5_Run HTRVX.csv`.
