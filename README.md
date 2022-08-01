@@ -99,7 +99,7 @@ From the direcoty `./Dropbox` and with the virtual environment `pizza-cli` activ
 Let's break this command down.
 1. the virtual environemt is activated `(pizza-cli)`
 
-2. the CLI tool is being alled `pizzabox`
+2. the CLI tool is being called `pizzabox`
 
 3. the first positional argument is a relative file path to the HTRVX log #5 `../../Downloads/logs_23/HTRVX/5_Run\ HTRVX.txt`
 
