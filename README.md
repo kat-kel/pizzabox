@@ -67,7 +67,7 @@ $ pip install -e .
 4. You'll also need to have recently pulled that same GitHub repository on your machine, so you have access to the data that the HTRVX workflow analysed.
 
 ### Execution
-With the virtual environment on, in which you installed the CLI tool, call the `pizzabox` application with the following two options: (1) the relative path to HTRVX log you download on your local machine, and (2) the relative path to your project's cloned git repository on your local machine. 
+5. With the virtual environment on, in which you installed the CLI tool, call the `pizzabox` application with the following two options: (1) the relative path to HTRVX log you download on your local machine, and (2) the relative path to your project's cloned git repository on your local machine. 
 
 To demonstrate the command, imagine you have the following file structure on your computer:
 ```
@@ -96,3 +96,5 @@ From, for example, the direcoty `./Dropbox`, and with the virtual environment `p
 ```shell
 (pizza-cli) $ pizzabox ../../Downloads/logs_23/HTRVX/5_Run\ HTRVX.txt ./GitHub_Project/
 ```
+## Results
+The CLI tool produces a folder called `htrvx_corrections/` inside whatever directory from which you ran the command. In the above example, the tool would produce the folder `./Dropbox/htrvx_corrections/` and inside would be an output CSV file with the name of the input log file, i.e. `./Dropbox/htrvx_corrections/output_5_Run HTRVX.csv`.
